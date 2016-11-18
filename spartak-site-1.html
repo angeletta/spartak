@@ -1,0 +1,829 @@
+<!doctype html>
+<html lang="ru" data-ng-app="mainApp">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спартак</title>
+
+    <link rel="stylesheet" href="css/clear.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-ng-controller="MainController">
+
+<div id="wrapper">
+
+    <!-- Header -->
+    <header>
+        <div class="center">
+
+            <a href="#" class="logo">Группа компаний</a>
+
+            <div class="phone">8-843-264-63-33</div>
+            <button class="feedbackBtn">Обратная связь</button>
+            <button class="loginPartnerBtn">Вход для<br />партнеров</button>
+            <div class="searchBlock"><button class="searchBtn"></button></div>
+
+            <!-- Main Menu -->
+            <nav class="mainMenu">
+                <div class="hamburger hamburger--3dx">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>
+                <ul>
+                    <li><a href="#">О компании</a>
+                        <ul>
+                            <li><a href="#">Общая информация</a></li>
+                            <li><a href="#">История</a></li>
+                            <li><a href="#">Раскрытие информации</a></li>
+                            <li><a href="#">ОАО «ОФ «Спартак»</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Оптовые продажи</a></li>
+                    <li><a href="#">Контрактное производство</a></li>
+                    <li><a href="#">Производственные услуги</a></li>
+                    <li><a href="#">Розничная сеть «Спартак»</a></li>
+                </ul>
+            </nav>
+            <!-- / Main Menu -->
+
+        </div>
+    </header>
+    <!-- / Header -->
+
+    <!-- Title -->
+    <section class="title">
+        <div class="center">
+
+            <!-- Breadcrumbs -->
+            <nav class="breadcrumbs">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Каталог обуви</a></li>
+                    <li><a href="#">Весна-лето</a></li>
+                    <li><a href="#">Женская обувь</a></li>
+                </ul>
+            </nav>
+            <!-- / Breadcrumbs -->
+
+            <h1>КАТАЛОГ ОБУВИ</h1>
+
+            <!-- Search Block -->
+            <div class="searchBlock">
+                <form>
+                    <input type="text" name="search" placeholder="Поиск" />
+                    <button type="submit" class="searchBtn"></button>
+                </form>
+            </div>
+            <!-- / Search Block -->
+
+        </div>
+    </section>
+    <!-- / Title -->
+
+    <!-- Content -->
+    <section class="content">
+        <div class="center">
+
+            <!-- Top Block -->
+            <div class="topBlock">
+
+                <!-- Sort Catalog -->
+                <div class="sortCatalogBlock">
+                    <a href="#" class="sortCatalogBtn">Товар в наличии</a>
+                    <a href="#" class="sortCatalogBtn">Новая коллекция</a>
+                    <a href="#" class="sortCatalogBtn">Акция</a>
+                    <a href="#" class="sortCatalogBtn active">Предзаказ</a>
+                </div>
+                <!-- / Sort Catalog -->
+
+                <!-- Download Remnants -->
+                <a href="#" class="remnantsBtn">Скачать остатки</a>
+                <!-- / Download Remnants -->
+
+            </div>
+            <!-- / Top Block -->
+
+            <!-- Left Column -->
+            <div class="leftColumn">
+
+                <a href="#" class="filterOpenBtn open">Фильтр товаров</a>
+
+                <!-- Filter -->
+                <div class="filter open">
+
+                    <!-- Filter Block -->
+                    <div class="filterBlock">
+                        <!-- Filter Title -->
+                        <div class="filterTitle">ОБУВЬ</div>
+                        <!-- / Filter Title -->
+
+                        <!-- Filter Content -->
+                        <div class="filterContent">
+                            <!-- Category -->
+                            <nav class="category">
+                                <ul>
+                                    <li><a href="#">Женская</a></li>
+                                    <li><a href="#">Мужская</a></li>
+                                    <li class="open"><a href="#">Для мальчиков</a>
+                                        <ul>
+                                            <li><a href="#">Школьная</a></li>
+                                            <li><a href="#">Дошкольная</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Для девочек</a></li>
+                                </ul>
+                            </nav>
+                            <!-- / Category -->
+                        </div>
+                        <!-- / Filter Content -->
+                    </div>
+                    <!-- / Filter Block -->
+
+                    <!-- Filter Block -->
+                    <div class="filterBlock">
+                        <!-- Filter Title -->
+                        <div class="filterTitle">Сезон</div>
+                        <!-- / Filter Title -->
+
+                        <!-- Filter Content -->
+                        <div class="filterContent">
+                            <!-- Filter Checkboxes -->
+                            <div class="checkboxes">
+                                <label><input type="checkbox" ng-checkbox ng-model="check1"/> Зимняя<span class="tooltip">Найдено 286 товаров</span></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check2"/> Демисезонная<span class="tooltip">Найдено 286 товаров</span></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check3"/> Летняя<span class="tooltip">Найдено 286 товаров</span></label></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check4"/> Школьный базар<span class="tooltip">Найдено 286 товаров</span></label></label>
+                            </div>
+                            <!-- / Filter Checkboxes -->
+                        </div>
+                        <!-- / Filter Content -->
+                    </div>
+                    <!-- / Filter Block -->
+
+                    <!-- Filter Block -->
+                    <div class="filterBlock">
+                        <!-- Filter Title -->
+                        <div class="filterTitle">ВИД ОБУВИ</div>
+                        <!-- / Filter Title -->
+
+                        <!-- Filter Content -->
+                        <div class="filterContent">
+                            <!-- Filter Checkboxes -->
+                            <div class="checkboxes">
+                                <label><input type="checkbox" ng-checkbox ng-model="check5"/> Ботфорты<span class="tooltip">Найдено 286 товаров</span></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check6"/> Сапоги<span class="tooltip">Найдено 286 товаров</span></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check7"/> Полусапоги<span class="tooltip">Найдено 286 товаров</span></label></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check8"/> Ботинки<span class="tooltip">Найдено 286 товаров</span></label></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check9"/> Полуботинки<span class="tooltip">Найдено 286 товаров</span></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check10"/> Туфли<span class="tooltip">Найдено 286 товаров</span></label></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check11"/> Мокасины<span class="tooltip">Найдено 286 товаров</span></label></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check12"/> Босоножки<span class="tooltip">Найдено 286 товаров</span></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check13"/> Сабо<span class="tooltip">Найдено 286 товаров</span></label></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check14"/> Сандалеты<span class="tooltip">Найдено 286 товаров</span></label></label>
+                            </div>
+                            <!-- / Filter Checkboxes -->
+                        </div>
+                        <!-- / Filter Content -->
+                    </div>
+                    <!-- / Filter Block -->
+
+                    <!-- Filter Block -->
+                    <div class="filterBlock">
+                        <!-- Filter Title -->
+                        <div class="filterTitle">МАТЕРИАЛ ВЕРХА</div>
+                        <!-- / Filter Title -->
+
+                        <!-- Filter Content -->
+                        <div class="filterContent">
+                            <!-- Filter Checkboxes -->
+                            <div class="checkboxes">
+                                <label><input type="checkbox" ng-checkbox ng-model="check15"/> Натуральная кожа<span class="tooltip">Найдено 286 товаров</span></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check16"/> Велюр<span class="tooltip">Найдено 286 товаров</span></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check17"/> Натуральный лак<span class="tooltip">Найдено 286 товаров</span></label></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check18"/> Нубук<span class="tooltip">Найдено 286 товаров</span></label></label>
+                                <label><input type="checkbox" ng-checkbox ng-model="check19"/> Искусственная кожа<span class="tooltip">Найдено 286 товаров</span></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check20"/> Текстиль<span class="tooltip">Найдено 286 товаров</span></label></label>
+                            </div>
+                            <!-- / Filter Checkboxes -->
+                        </div>
+                        <!-- / Filter Content -->
+                    </div>
+                    <!-- / Filter Block -->
+
+                    <!-- Filter Block -->
+                    <div class="filterBlock">
+                        <!-- Filter Title -->
+                        <div class="filterTitle">МАТЕРИАЛ ПОДКЛАДКИ</div>
+                        <!-- / Filter Title -->
+
+                        <!-- Filter Content -->
+                        <div class="filterContent">
+                            <!-- Filter Checkboxes -->
+                            <div class="checkboxes">
+                                <label><input type="checkbox" ng-checkbox ng-model="check21"/> Натуральная кожа<span class="tooltip">Найдено 286 товаров</span></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check22"/> Натуральный мех<span class="tooltip">Найдено 286 товаров</span></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check23"/> Без подклада<span class="tooltip">Найдено 286 товаров</span></label></label>
+                            </div>
+                            <!-- / Filter Checkboxes -->
+                        </div>
+                        <!-- / Filter Content -->
+                    </div>
+                    <!-- / Filter Block -->
+
+                    <!-- Filter Block -->
+                    <div class="filterBlock">
+                        <!-- Filter Title -->
+                        <div class="filterTitle">ЦВЕТ</div>
+                        <!-- / Filter Title -->
+
+                        <!-- Filter Content -->
+                        <div class="filterContent">
+                            <!-- Filter Checkboxes -->
+                            <div class="checkboxes">
+                                <label><input type="checkbox" ng-checkbox ng-model="check24"/> Белая<span class="tooltip">Найдено 286 товаров</span></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check25"/> Черная<span class="tooltip">Найдено 286 товаров</span></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check26"/> Светлая<span class="tooltip">Найдено 286 товаров</span></label></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check27"/> Темная<span class="tooltip">Найдено 286 товаров</span></label></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check28"/> Зеленая<span class="tooltip">Найдено 286 товаров</span></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check29"/> Красная<span class="tooltip">Найдено 286 товаров</span></label></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check30"/> Синяя<span class="tooltip">Найдено 286 товаров</span></label></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check31"/> Желтая<span class="tooltip">Найдено 286 товаров</span></label>
+                            </div>
+                            <!-- / Filter Checkboxes -->
+                        </div>
+                        <!-- / Filter Content -->
+                    </div>
+                    <!-- / Filter Block -->
+
+                    <!-- Filter Block -->
+                    <div class="filterBlock">
+                        <!-- Filter Title -->
+                        <div class="filterTitle">ПОЛНОТА</div>
+                        <!-- / Filter Title -->
+
+                        <!-- Filter Content -->
+                        <div class="filterContent">
+                            <!-- Filter Checkboxes -->
+                            <div class="checkboxes">
+                                <label><input type="checkbox" ng-checkbox ng-model="check32"/> 4<span class="tooltip">Найдено 286 товаров</span></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check33"/> 6<span class="tooltip">Найдено 286 товаров</span></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check34"/> 8<span class="tooltip">Найдено 286 товаров</span></label></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check35"/> 10<span class="tooltip">Найдено 286 товаров</span></label></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check36"/> 12<span class="tooltip">Найдено 286 товаров</span></label>
+                            </div>
+                            <!-- / Filter Checkboxes -->
+                        </div>
+                        <!-- / Filter Content -->
+                    </div>
+                    <!-- / Filter Block -->
+
+                    <!-- Filter Block -->
+                    <div class="filterBlock">
+                        <!-- Filter Title -->
+                        <div class="filterTitle">БРЕНДЫ</div>
+                        <!-- / Filter Title -->
+
+                        <!-- Filter Content -->
+                        <div class="filterContent">
+                            <!-- Filter Checkboxes -->
+                            <div class="checkboxes">
+                                <label><input type="checkbox" ng-checkbox ng-model="check37"/> Спартак<span class="tooltip">Найдено 286 товаров</span></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check38"/> Primorosso<span class="tooltip">Найдено 286 товаров</span></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check39"/> Perfebelle<span class="tooltip">Найдено 286 товаров</span></label></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check40"/> Bonnman<span class="tooltip">Найдено 286 товаров</span></label></label><br />
+                                <label><input type="checkbox" ng-checkbox ng-model="check41"/> Bon ton<span class="tooltip">Найдено 286 товаров</span></label>
+                            </div>
+                            <!-- / Filter Checkboxes -->
+                        </div>
+                        <!-- / Filter Content -->
+                    </div>
+                    <!-- / Filter Block -->
+
+                </div>
+                <!-- / Filter -->
+
+
+            </div>
+            <!-- / Left Column -->
+
+            <!-- Right Column -->
+            <div class="rightColumn">
+
+                <!-- Catalog Slider -->
+                <div class="catalogSlider">
+                    <div class="item">
+                        <img src="images/slide-1.jpg" alt="" />
+                        <a href="#" class="toCatalogBtn">Смотреть</a>
+                    </div>
+                </div>
+                <!-- / Catalog Slider -->
+
+                <!-- Catalog -->
+                <div class="catalog">
+
+                    <a href="#" class="item">
+                        <div class="productDescription">
+                            <div class="image">
+                                <img src="images/products/product-1.png" alt="" />
+                            </div>
+                            <p class="sku">S9810-05-81L</p>
+                            <p>Верх: натуральная кожа</p>
+                            <p>Подклад: натуральная кожа</p>
+                            <div class="buy">
+                                <span class="price">2500 руб.</span>
+                                <button class="toCartBtn"></button>
+                            </div>
+                            <button class="quickViewBtn">Быстрый просмотр</button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="item">
+                        <div class="productDescription">
+                            <div class="image">
+                                <img src="images/products/product-2.png" alt="" />
+                            </div>
+                            <p class="sku">S9810-05-81L</p>
+                            <p>Верх: натуральная кожа</p>
+                            <p>Подклад: натуральная кожа</p>
+                            <div class="buy">
+                                <span class="price">1800 руб.</span>
+                                <button class="toCartBtn"></button>
+                            </div>
+                            <button class="quickViewBtn">Быстрый просмотр</button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="item">
+                        <div class="productDescription">
+                            <div class="image">
+                                <img src="images/products/product-3.png" alt="" />
+                            </div>
+                            <p class="sku">S9810-05-81L</p>
+                            <p>Верх: натуральная кожа</p>
+                            <p>Подклад: натуральная кожа</p>
+                            <div class="buy">
+                                <span class="price">2750 руб.</span>
+                                <button class="toCartBtn"></button>
+                            </div>
+                            <button class="quickViewBtn">Быстрый просмотр</button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="item">
+                        <div class="productDescription">
+                            <div class="image">
+                                <img src="images/products/product-4.png" alt="" />
+                            </div>
+                            <p class="sku">S9810-05-81L</p>
+                            <p>Верх: натуральная кожа</p>
+                            <p>Подклад: натуральная кожа</p>
+                            <div class="buy">
+                                <span class="price">1940 руб.</span>
+                                <button class="toCartBtn"></button>
+                            </div>
+                            <button class="quickViewBtn">Быстрый просмотр</button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="item">
+                        <div class="productDescription">
+                            <div class="image">
+                                <img src="images/products/product-5.png" alt="" />
+                            </div>
+                            <p class="sku">S9810-05-81L</p>
+                            <p>Верх: натуральная кожа</p>
+                            <p>Подклад: натуральная кожа</p>
+                            <div class="buy">
+                                <span class="price">2500 руб.</span>
+                                <button class="toCartBtn"></button>
+                            </div>
+                            <button class="quickViewBtn">Быстрый просмотр</button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="item">
+                        <div class="productDescription">
+                            <div class="image">
+                                <img src="images/products/product-6.png" alt="" />
+                            </div>
+                            <p class="sku">S9810-05-81L</p>
+                            <p>Верх: натуральная кожа</p>
+                            <p>Подклад: натуральная кожа</p>
+                            <div class="buy">
+                                <span class="price">1800 руб.</span>
+                                <button class="toCartBtn"></button>
+                            </div>
+                            <button class="quickViewBtn">Быстрый просмотр</button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="item">
+                        <div class="productDescription">
+                            <div class="image">
+                                <img src="images/products/product-7.png" alt="" />
+                            </div>
+                            <p class="sku">S9810-05-81L</p>
+                            <p>Верх: натуральная кожа</p>
+                            <p>Подклад: натуральная кожа</p>
+                            <div class="buy">
+                                <span class="price">2750 руб.</span>
+                                <button class="toCartBtn"></button>
+                            </div>
+                            <button class="quickViewBtn">Быстрый просмотр</button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="item">
+                        <div class="productDescription">
+                            <div class="image">
+                                <img src="images/products/product-8.png" alt="" />
+                            </div>
+                            <p class="sku">S9810-05-81L</p>
+                            <p>Верх: натуральная кожа</p>
+                            <p>Подклад: натуральная кожа</p>
+                            <div class="buy">
+                                <span class="price">1940 руб.</span>
+                                <button class="toCartBtn"></button>
+                            </div>
+                            <button class="quickViewBtn">Быстрый просмотр</button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="item">
+                        <div class="productDescription">
+                            <div class="image">
+                                <img src="images/products/product-4.png" alt="" />
+                            </div>
+                            <p class="sku">S9810-05-81L</p>
+                            <p>Верх: натуральная кожа</p>
+                            <p>Подклад: натуральная кожа</p>
+                            <div class="buy">
+                                <span class="price">2500 руб.</span>
+                                <button class="toCartBtn"></button>
+                            </div>
+                            <button class="quickViewBtn">Быстрый просмотр</button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="item">
+                        <div class="productDescription">
+                            <div class="image">
+                                <img src="images/products/product-3.png" alt="" />
+                            </div>
+                            <p class="sku">S9810-05-81L</p>
+                            <p>Верх: натуральная кожа</p>
+                            <p>Подклад: натуральная кожа</p>
+                            <div class="buy">
+                                <span class="price">1800 руб.</span>
+                                <button class="toCartBtn"></button>
+                            </div>
+                            <button class="quickViewBtn">Быстрый просмотр</button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="item">
+                        <div class="productDescription">
+                            <div class="image">
+                                <img src="images/products/product-1.png" alt="" />
+                            </div>
+                            <p class="sku">S9810-05-81L</p>
+                            <p>Верх: натуральная кожа</p>
+                            <p>Подклад: натуральная кожа</p>
+                            <div class="buy">
+                                <span class="price">2750 руб.</span>
+                                <button class="toCartBtn"></button>
+                            </div>
+                            <button class="quickViewBtn">Быстрый просмотр</button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="item">
+                        <div class="productDescription">
+                            <div class="image">
+                                <img src="images/products/product-2.png" alt="" />
+                            </div>
+                            <p class="sku">S9810-05-81L</p>
+                            <p>Верх: натуральная кожа</p>
+                            <p>Подклад: натуральная кожа</p>
+                            <div class="buy">
+                                <span class="price">1940 руб.</span>
+                                <button class="toCartBtn"></button>
+                            </div>
+                            <button class="quickViewBtn">Быстрый просмотр</button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="item">
+                        <div class="productDescription">
+                            <div class="image">
+                                <img src="images/products/product-8.png" alt="" />
+                            </div>
+                            <p class="sku">S9810-05-81L</p>
+                            <p>Верх: натуральная кожа</p>
+                            <p>Подклад: натуральная кожа</p>
+                            <div class="buy">
+                                <span class="price">2500 руб.</span>
+                                <button class="toCartBtn"></button>
+                            </div>
+                            <button class="quickViewBtn">Быстрый просмотр</button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="item">
+                        <div class="productDescription">
+                            <div class="image">
+                                <img src="images/products/product-7.png" alt="" />
+                            </div>
+                            <p class="sku">S9810-05-81L</p>
+                            <p>Верх: натуральная кожа</p>
+                            <p>Подклад: натуральная кожа</p>
+                            <div class="buy">
+                                <span class="price">1800 руб.</span>
+                                <button class="toCartBtn"></button>
+                            </div>
+                            <button class="quickViewBtn">Быстрый просмотр</button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="item">
+                        <div class="productDescription">
+                            <div class="image">
+                                <img src="images/products/product-5.png" alt="" />
+                            </div>
+                            <p class="sku">S9810-05-81L</p>
+                            <p>Верх: натуральная кожа</p>
+                            <p>Подклад: натуральная кожа</p>
+                            <div class="buy">
+                                <span class="price">2750 руб.</span>
+                                <button class="toCartBtn"></button>
+                            </div>
+                            <button class="quickViewBtn">Быстрый просмотр</button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="item">
+                        <div class="productDescription">
+                            <div class="image">
+                                <img src="images/products/product-6.png" alt="" />
+                            </div>
+                            <p class="sku">S9810-05-81L</p>
+                            <p>Верх: натуральная кожа</p>
+                            <p>Подклад: натуральная кожа</p>
+                            <div class="buy">
+                                <span class="price">1940 руб.</span>
+                                <button class="toCartBtn"></button>
+                            </div>
+                            <button class="quickViewBtn">Быстрый просмотр</button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="item">
+                        <div class="productDescription">
+                            <div class="image">
+                                <img src="images/products/product-5.png" alt="" />
+                            </div>
+                            <p class="sku">S9810-05-81L</p>
+                            <p>Верх: натуральная кожа</p>
+                            <p>Подклад: натуральная кожа</p>
+                            <div class="buy">
+                                <span class="price">2500 руб.</span>
+                                <button class="toCartBtn"></button>
+                            </div>
+                            <button class="quickViewBtn">Быстрый просмотр</button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="item">
+                        <div class="productDescription">
+                            <div class="image">
+                                <img src="images/products/product-6.png" alt="" />
+                            </div>
+                            <p class="sku">S9810-05-81L</p>
+                            <p>Верх: натуральная кожа</p>
+                            <p>Подклад: натуральная кожа</p>
+                            <div class="buy">
+                                <span class="price">1800 руб.</span>
+                                <button class="toCartBtn"></button>
+                            </div>
+                            <button class="quickViewBtn">Быстрый просмотр</button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="item">
+                        <div class="productDescription">
+                            <div class="image">
+                                <img src="images/products/product-7.png" alt="" />
+                            </div>
+                            <p class="sku">S9810-05-81L</p>
+                            <p>Верх: натуральная кожа</p>
+                            <p>Подклад: натуральная кожа</p>
+                            <div class="buy">
+                                <span class="price">2750 руб.</span>
+                                <button class="toCartBtn"></button>
+                            </div>
+                            <button class="quickViewBtn">Быстрый просмотр</button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="item">
+                        <div class="productDescription">
+                            <div class="image">
+                                <img src="images/products/product-8.png" alt="" />
+                            </div>
+                            <p class="sku">S9810-05-81L</p>
+                            <p>Верх: натуральная кожа</p>
+                            <p>Подклад: натуральная кожа</p>
+                            <div class="buy">
+                                <span class="price">1940 руб.</span>
+                                <button class="toCartBtn"></button>
+                            </div>
+                            <button class="quickViewBtn">Быстрый просмотр</button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="item">
+                        <div class="productDescription">
+                            <div class="image">
+                                <img src="images/products/product-4.png" alt="" />
+                            </div>
+                            <p class="sku">S9810-05-81L</p>
+                            <p>Верх: натуральная кожа</p>
+                            <p>Подклад: натуральная кожа</p>
+                            <div class="buy">
+                                <span class="price">2500 руб.</span>
+                                <button class="toCartBtn"></button>
+                            </div>
+                            <button class="quickViewBtn">Быстрый просмотр</button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="item">
+                        <div class="productDescription">
+                            <div class="image">
+                                <img src="images/products/product-3.png" alt="" />
+                            </div>
+                            <p class="sku">S9810-05-81L</p>
+                            <p>Верх: натуральная кожа</p>
+                            <p>Подклад: натуральная кожа</p>
+                            <div class="buy">
+                                <span class="price">1800 руб.</span>
+                                <button class="toCartBtn"></button>
+                            </div>
+                            <button class="quickViewBtn">Быстрый просмотр</button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="item">
+                        <div class="productDescription">
+                            <div class="image">
+                                <img src="images/products/product-1.png" alt="" />
+                            </div>
+                            <p class="sku">S9810-05-81L</p>
+                            <p>Верх: натуральная кожа</p>
+                            <p>Подклад: натуральная кожа</p>
+                            <div class="buy">
+                                <span class="price">2750 руб.</span>
+                                <button class="toCartBtn"></button>
+                            </div>
+                            <button class="quickViewBtn">Быстрый просмотр</button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="item">
+                        <div class="productDescription">
+                            <div class="image">
+                                <img src="images/products/product-2.png" alt="" />
+                            </div>
+                            <p class="sku">S9810-05-81L</p>
+                            <p>Верх: натуральная кожа</p>
+                            <p>Подклад: натуральная кожа</p>
+                            <div class="buy">
+                                <span class="price">1940 руб.</span>
+                                <button class="toCartBtn"></button>
+                            </div>
+                            <button class="quickViewBtn">Быстрый просмотр</button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="item">
+                        <div class="productDescription">
+                            <div class="image">
+                                <img src="images/products/product-8.png" alt="" />
+                            </div>
+                            <p class="sku">S9810-05-81L</p>
+                            <p>Верх: натуральная кожа</p>
+                            <p>Подклад: натуральная кожа</p>
+                            <div class="buy">
+                                <span class="price">2500 руб.</span>
+                                <button class="toCartBtn"></button>
+                            </div>
+                            <button class="quickViewBtn">Быстрый просмотр</button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="item">
+                        <div class="productDescription">
+                            <div class="image">
+                                <img src="images/products/product-7.png" alt="" />
+                            </div>
+                            <p class="sku">S9810-05-81L</p>
+                            <p>Верх: натуральная кожа</p>
+                            <p>Подклад: натуральная кожа</p>
+                            <div class="buy">
+                                <span class="price">1800 руб.</span>
+                                <button class="toCartBtn"></button>
+                            </div>
+                            <button class="quickViewBtn">Быстрый просмотр</button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="item">
+                        <div class="productDescription">
+                            <div class="image">
+                                <img src="images/products/product-5.png" alt="" />
+                            </div>
+                            <p class="sku">S9810-05-81L</p>
+                            <p>Верх: натуральная кожа</p>
+                            <p>Подклад: натуральная кожа</p>
+                            <div class="buy">
+                                <span class="price">2750 руб.</span>
+                                <button class="toCartBtn"></button>
+                            </div>
+                            <button class="quickViewBtn">Быстрый просмотр</button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="item">
+                        <div class="productDescription">
+                            <div class="image">
+                                <img src="images/products/product-6.png" alt="" />
+                            </div>
+                            <p class="sku">S9810-05-81L</p>
+                            <p>Верх: натуральная кожа</p>
+                            <p>Подклад: натуральная кожа</p>
+                            <div class="buy">
+                                <span class="price">1940 руб.</span>
+                                <button class="toCartBtn"></button>
+                            </div>
+                            <button class="quickViewBtn">Быстрый просмотр</button>
+                        </div>
+                    </a>
+
+                </div>
+                <!-- / Catalog -->
+
+                <!-- Page Navigation -->
+                <nav class="pageNavigation">
+                    <ul>
+                        <li><a href="#">Назад</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">Далее</a></li>
+                    </ul>
+                </nav>
+                <!-- / Page Navigation -->
+
+            </div>
+            <!-- / Right Column -->
+
+        </div>
+    </section>
+    <!-- / Content -->
+
+    <div class="clear"></div>
+    <div class="empty"></div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="center">
+        <a href="#" class="logo"></a>
+
+        <!-- Footer Menu -->
+        <nav class="footerMenu">
+            <ul>
+                <li><a href="#">Приглашаем на работу</a></li>
+                <li class="active"><a href="#">Контакты</a></li>
+                <li><a href="#">Спартак-tv</a></li>
+                <li><a href="#">Продажа производственных материалов</a></li>
+                <li><a href="#">Арендаторам</a></li>
+                <li><a href="#">Поставщикам</a></li>
+            </ul>
+        </nav>
+        <!-- / Footer Menu -->
+    </div>
+</footer>
+<!-- / Footer -->
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/tools.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
+
+</body>
+</html>
